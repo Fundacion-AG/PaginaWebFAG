@@ -1,0 +1,4 @@
+INSTALLATION:
+
+- mod_sj_module_tabs_j25-j30-res_v1.0.zip 	==> Install for Joomla 2.5.x, Joomla 3.0.x and responsive
+- mod_yt_moduletabs.zip				==> Install for Joomla 1.5.x

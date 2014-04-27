@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" method="upgrade" client="site">
+<name>Facebook FanBox</name>
+<author>Khawaib Ahmed</author>
+<creationDate>July 2009</creationDate>
+<copyright>Copyright (C) 2009 - Present. www.Khawaib.co.uk. All rights reserved.</copyright>
+<authorEmail>khawaib@khawaib.co.uk</authorEmail>
+<authorUrl>www.khawaib.co.uk</authorUrl>
+<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>	
+<version>2.0</version>
+<description>FANBOX_INSTALLED_SUCCESSFULLY</description>
+    <files>
+        <filename module="mod_fbfanbox">mod_fbfanbox.php</filename>
+        <filename>mod_fbfanbox.xml</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_fbfanbox.ini</language>
+        <language tag="en-GB">en-GB.mod_fbfanbox.sys.ini</language>
+    </languages>
+    <params>
+		<param name="page_url" type="textarea" cols="40" rows="2" default="" label="PAGE_URL" description="PAGE_URL_DESC" />
+        <param name="boxwidth" type="text" default="250" label="WIDTH" description="WIDTH_DESC" />
+        <param name="boxheight" type="text" default="550" label="HEIGHT" description="HEIGHT_DESC" />
+		<param name="show_faces" type="list" default="1" label="SHOW_FACES" description="SHOW_FACES_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_stream" type="list" default="1" label="SHOW_STREAM" description="SHOW_STREAM_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_header" type="list" default="1" label="SHOW_HEADER" description="SHOW_HEADER_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="force_wall" type="list" default="1" label="FORCE_WALL" description="FORCE_WALL_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="connect_script_call" type="list" default="1" label="CONNECT_SCRIPT_CALL" description="CONNECT_SCRIPT_CALL_DESC">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX" description="MODULE_CLASS_SUFFIX_DESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="list" default="1" label="CACHING" description="CACHING_DESC">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="CACHE_TIME" description="CACHE_TIME_DESC" />
+	</params>
+
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="page_url" type="textarea" cols="40" rows="2" default="" label="PAGE_URL" description="PAGE_URL_DESC" />
+                <field name="boxwidth" type="text" default="250" label="WIDTH" description="WIDTH_DESC" />
+                <field name="boxheight" type="text" default="550" label="HEIGHT" description="HEIGHT_DESC" />
+                <field name="show_faces" type="list" default="1" label="SHOW_FACES" description="SHOW_FACES_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="show_stream" type="list" default="1" label="SHOW_STREAM" description="SHOW_STREAM_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="show_header" type="list" default="1" label="SHOW_HEADER" description="SHOW_HEADER_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="force_wall" type="list" default="1" label="FORCE_WALL" description="FORCE_WALL_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <param name="@spacer" type="spacer" default="" label="" description="" />
+                <field name="connect_script_call" type="list" default="1" label="CONNECT_SCRIPT_CALL" description="CONNECT_SCRIPT_CALL_DESC">
+                    <option value="0">Dsiable</option>
+                    <option value="1">Enable</option>
+                </field>
+			</fieldset>
+			<fieldset name="advanced">
+                <field name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX" description="MODULE_CLASS_SUFFIX_DESC" />
+                <field name="@spacer" type="spacer" default="" label="" description="" />
+                <field name="cache" type="list" default="1" label="CACHING" description="CACHING_DESC">
+                    <option value="1">Use global</option>
+                    <option value="0">No caching</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="CACHE_TIME" description="CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5.0">
+    <name>YT News Basic</name>
+    <creationDate>Oct 2010</creationDate>
+    <author>YTC</author>
+    <copyright>(C) 2010 GreaThemes.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contact@ytcvn.com</authorEmail>
+    <authorUrl>http://www.ytcvn.com</authorUrl>
+    <version>1.0</version>
+    <description>YT_NEWS_BASIC_DESC</description>
+    <files>
+         <filename module="mod_yt_basic_news">mod_yt_basic_news.php</filename>
+         <filename module="mod_yt_basic_news">mod_yt_basic_news.xml</filename>
+         <filename module="mod_yt_basic_news">helper.php</filename>         
+         <folder module="mod_yt_basic_news">assets</folder>
+         <folder module="mod_yt_basic_news">tmpl</folder>
+         <folder module="mod_yt_basic_news">elements</folder>
+    </files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_yt_basic_news.ini</language>
+	</languages>   
+   <params addpath="/modules/mod_yt_basic_news/elements">   		
+		<param name="@spacer1" type="spacer" default="&lt;div style=&quot;font-family:arial;font-size:15px;color:#fff; text-shadow:1px 1px 1px #333;padding:7px;margin:0;background:#0D9FC4;&quot;&gt;General Settings&lt;/div&gt;" />
+
+   		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+   		<!-- Group 1: Article Filter -->
+        <param name="theme" type="text" default="" label="Select theme" description="" />
+		<param name="sec_or_cat" type="radio" default="0" label="Select option" description="Select option">
+          <option value="0">Section</option>
+          <option value="1">Category</option>          
+        </param>
+		
+        <param name="sec_cat_list" type="content" default="1" label="Select" description="Please choose some categories (or some sections) in the list which you want to show in the module" />
+   		
+		<param name="is_frontpage" type="list" default="2" label="Article Type" description="Please choose a type of article which you want to show in the module ">
+            <option value="1">Show FrontPage Articles Only</option>
+            <option value="2">Include FrontPage Articles</option>
+            <option value="3">Hide FrontPage Articles</option>
+        </param>
+   		<param name="sort_order_field" type="list" default="created" label="Sort By Field" description="SORT ORDER BY FIELD">
+			<option value="created">Date</option>
+			<option value="ordering">Ordering</option>
+			<option value="hits">Hits</option>						<option value="random">Random</option>
+		</param>
+		
+		<param name="sort_order" type="list" default="ASC" label="Sort Order By" description="SORT ORDER BY ASC|DESC">
+			<option value="ASC">Asc</option>
+			<option value="DESC">Desc</option>
+		</param>	
+		<param name="show_date" type="list" default="1" label="Show date" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>	
+		<param name="show_image" type="list" default="1" label="Show Image" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>		
+		<param name="show_desc" type="list" default="1" label="Show Description" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>	
+		<param name="show_cattitle" type="list" default="1" label="Show category title" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="total" type="text" default="6" label="The Amount of Articles" description="The amount of articles which you want to show in the module" />
+		
+		<param name="limittitle" type="text" default="40" label="Max Length of Title" description="Max length of title" />
+		<param name="limit_description" type="text" default="150" label="Max Length of Description" description="Max length of Description" />
+		<param name="cropresizeimage" type="list" default="0" label="Resized Image Type" description="Resized Image Type">
+			<option value="0">Resized</option>
+			<option value="1">Cropped</option>
+		</param>	
+						
+		<param name="thumb_width" type="text" default="70" label="Thumbnail Width" description="The width of thumbnail image. The module will auto resize your image to your width" />
+		<param name="thumb_height" type="text" default="70" label="Thumbnail Height" description="The height of thumbnail image. The module will auto resize your image to your height" />
+		
+		<param name="showline" type="list" default="0" label="Show line bottom" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		
+   </params>
+   
+   <params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Caching">
+			<option value="1">Use Cache</option>
+			<option value="0">Do not use Cache</option>
+		</param>
+		<param name="cache_time" type="text" default="300" label="Cache time" description="Cache time" />		
+		
+	</params>
+</install>
+

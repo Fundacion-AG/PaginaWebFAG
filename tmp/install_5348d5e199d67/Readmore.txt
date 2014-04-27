@@ -1,0 +1,5 @@
+INSTALLATION:
+
+- mod_sj_basic_news_j25-j30-res_v3.0.zip 	==> Install for Joomla 1.7.x, Joomla 2.5.x, Joomla 3.0.x and responsive
+- mod_sj_basic_news_j17-j25_v2.5.0.zip	==> Install for Joomla 1.7.x and Joomla 2.5.x
+- mod_yt_basic_news.zip			==> Install for Joomla 1.5.x
